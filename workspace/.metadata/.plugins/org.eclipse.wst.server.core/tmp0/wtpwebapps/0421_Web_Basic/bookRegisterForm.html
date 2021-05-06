@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+	table.type02 {
+	  border-collapse: separate;
+	  border-spacing: 0;
+	  text-align: center;
+	  line-height: 1.5;
+	  border-top: 1px solid #ccc;
+	  border-left: 1px solid #ccc;
+	  margin : 20px 10px;
+	}
+	
+	th {
+	  padding: 10px;
+	  font-weight: bold;
+	  vertical-align: top;
+	  text-align: center;
+	  border-right: 1px solid #ccc;
+	  border-bottom: 1px solid #ccc;
+	  border-top: 1px solid #fff;
+	  border-left: 1px solid #fff;
+	  background: orange;
+	}
+	td {
+	  padding: 10px;
+	  font-weight: bold;
+	  vertical-align: top;
+	  text-align: left;
+	  border-right: 1px solid #ccc;
+	  border-bottom: 1px solid #ccc;
+	  border-top: 1px solid #fff;
+	  border-left: 1px solid #fff;
+	}
+	#button { text-align:center; } 
+	 
+	
+	
+</style>
+
+<body>
+<form name="myform">
+<table class="type02">
+<caption><b>책등록</b></caption>
+    <tr>
+    	<th scope="row">분류선택</th>
+    	<td>
+    		<select name="title">
+    			<option value="1">문학</option>
+    			<option value="2">기술</option>
+    			<option value="3">과학</option>
+    		</select>
+    	</td>
+    </tr>
+    <tr>
+    	<th scope="row">제  목</th>
+    	<td><input type="text" name="subject" required></td>
+    </tr>
+    <tr>
+    	<th scope="row">가  격</th>
+    	<td><input type="text" name="price" required>원</td>
+    </tr>
+    <tr>
+    	<th scope="row">수  량</th>
+    	<td><input type="number" name="count" value="1">권</td>
+    </tr>
+    <tr>
+    	<th scope="row">저  자</th>
+    	<td><input type="text" name="author"></td>
+    </tr>
+    <tr>
+    	<th scope="row">출판사</th>
+    	<td><input type="text" name="publisher"></td>
+    </tr>
+    <tr>
+    	<th scope="row">출판일</th>
+    	<td><select name="year">
+    			<option value="">년</option>
+    			<script>
+    				for(i=2022; i > 2010; i--) {
+    					 document.write("<option value='"+ i +"'>"+ i +"</option>");
+    				}	
+    			</script>
+    	</select>
+    	<select name="month">
+    			<option value="">월</option>
+    			<script>
+    				for(i=1; i<13; i++) {
+    					 document.write("<option value='"+ i +"'>"+ i +"</option>");
+    				}	
+    			</script>
+    	</select>
+    	<select name="day">
+    			<option value="">일</option>
+    			<script>
+    				for(i=1; i<32; i++) {
+    					 document.write("<option value='"+ i +"'>"+ i +"</option>");
+    				}	
+    			</script>
+    	</select>
+    	</td>
+    </tr>
+    <tr>
+    	<th scope="row">이미지</th>
+    	<td><input type="file" name="file" value="찾아보기"></td>
+    </tr>
+    <tr>
+    	<th scope="row">내용</th>
+    	<td><textarea rows="15" cols="50" style="overflow:visible"></textarea></td>
+    </tr>
+    <tr>
+    	<th scope="row">할인율</th>
+    	<td><input type="number">%</td>
+    </tr>
+    <tr>
+    	<td id="button" colspan="2">
+    		<input type="submit" value="책등록">
+    		<input type="reset" value="다시작성">
+    	</td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

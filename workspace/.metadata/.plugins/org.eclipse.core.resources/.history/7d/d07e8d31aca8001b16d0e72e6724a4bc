@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery의  change() 함수 예제</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$('#chg').change(function(){
+			alert("다른 옵션이 선택될때:" + $(chg).val());
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="section">
+		<select id="chg">
+			<option value="java">JAVA</option>
+			<option value="orachle">Oracle</option>
+			<option value="html">HTML</option>
+			<option value="jsp">JSP</option>
+		</select>
+	</div>
+</body>
+</html>

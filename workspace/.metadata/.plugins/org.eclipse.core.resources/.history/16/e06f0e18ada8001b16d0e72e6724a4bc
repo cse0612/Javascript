@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery의 change()함수 예제2</title>
+</head>
+<body>
+	<div id="input">
+		<h3>이 름</h3>
+		<input type="text" name="name">
+		
+		<h3>취 미</h3>
+		<input type="checkbox" name="hobby">
+	</div>
+</body>
+</html>

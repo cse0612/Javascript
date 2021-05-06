@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<% request.setCharacterEncoding("EUC-KR"); %>
+
+<jsp:useBean id="mem" class="member.DBBean" scope="page" />
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Member_control 페이지 => MVC 패턴의 C(Controler)부분에 해당</title>
+</head>
+<body>
+
+</body>
+</html>

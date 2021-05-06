@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h2>고객거래 내역</h2>
+		<p>조회기간<input id="datapicker1" name="search1"/>~
+		<input id="datapicker2" name="search2"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+</body>
+</html>

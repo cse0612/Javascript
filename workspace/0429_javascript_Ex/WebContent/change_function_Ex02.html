@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery의 change()함수 예제2</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function() {
+		//텍스트 박스의 입력값 변경 상태 감지
+		//선택자 input name값 기준
+		$("input[name='name']").change(function() {
+			$('#result').html('이름의 입력값이 변경되었다 => '+$(this).val());
+		});
+		//체크박스의 체크상태 변경 감지
+		$("input[name='hobby']").change(function() {
+			$('#result').html('취미가 변경되었다  => '+$(this).val());
+		});
+		//라디오버튼의 체크상태 변경 감지
+		$("input[name='gender']").change(function() {
+			$('#result').html('성별이 변경되었다  => '+$(this).val());
+		});
+		//셀렉트버튼의 체크상태 변경 감지
+		$("select[name='job']").change(function() {
+			$('#result').html('직업선택이 변경되었다  => '+$(this).val());
+		});
+	});
+
+</script>
+</head>
+<body>
+	<div id="input">
+		<h3>이 름</h3>
+		<input type="text" name="name">
+		
+		<h3>취 미</h3>
+		<label><input type="checkbox" name="hobby" value="축구">축구</label>
+		<label><input type="checkbox" name="hobby" value="농구">농구</label>
+		<label><input type="checkbox" name="hobby" value="야구">야구</label>
+		
+		<h3>성 별</h3>
+		<label><input type="radio" name="gender" value="남자">남자</label>
+		<label><input type="radio" name="gender" value="여자">여자</label>
+		
+		<h3>직 업</h3>
+		<select name="job">
+			<option selected>직업선택</option>
+			<option value="웹퍼블리셔">웹퍼블리셔</option>
+			<option value="디자이너">디자이너</option>
+			<option value="프로그래머">프로그래머</option>
+			<option value="웹기획자">웹기획자</option>
+		</select>
+		
+		<hr>
+		<h2>RESULT</h2>
+		<div id="result"></div>
+	</div>
+</body>
+</html>

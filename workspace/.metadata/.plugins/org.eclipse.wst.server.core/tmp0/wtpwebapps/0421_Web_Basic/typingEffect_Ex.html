@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>배열에 있는 문자열을 타이핑 하는 것처럼 문자열 보여주기</title>
+<script type="text/javascript">
+	showtext = new Array(8);
+
+	showtext[0] = "본 회사의 설립목적은";
+	showtext[1] = "기업간 전자상거래를 위한 B2B Solution을 보유한";
+	showtext[2] = "미래 정보화 사회의 구축을 선도하는 회사가 되고자 합니다";
+	showtext[3] = "경영이념은";
+	showtext[4] = "항상 창조적이고 도전적인 기업문화 선도";
+	showtext[5] = "꿈과 희망을 실현하려는 도전";
+	showtext[6] = "기술 혁신을 통한 변화";
+	showtext[7] = "자유로우며 창조적인 사고";
+     /*변수선언및 초기화*/
+	 var len = 8; //배열의 총 갯수
+	 var idx = 0; //총길이
+	 var pos = 1; //문자열의 위치
+	 
+	function startTyping() {
+	   
+	   document.myForm.typing.value=showtext[idx].substring(0, pos) + "_";
+	   if(pos == showtext[idx].length){
+	        idx++;
+	    	pos = 0;
+	    if(idx == len)
+	    	idx=0;
+	    	windows.setTimeout("startTyping()", 1200);
+	    }else{
+	     	pos++;
+	     	setTimeout("startTyping()", 150);
+	   }
+	}
+</script>
+</head>
+<body onload="startTyping()">
+	<h2>타이핑하는 것처럼 문자열 보여주기</h2>
+	<form name="myForm"">
+		<input type="text" id="typing" name="typing" size="80" style="background-color: yellow;">
+	</form>
+</body>
+</html>

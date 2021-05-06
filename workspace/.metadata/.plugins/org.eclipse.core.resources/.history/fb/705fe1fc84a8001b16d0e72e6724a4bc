@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>CGV 현재 상영작/개봉 예정</h2>
+	<div id="rotator1">
+		<div class="divHeight">
+			<img src="images/더스파이.jpg">
+		</div>
+	</div>
+</body>
+</html>

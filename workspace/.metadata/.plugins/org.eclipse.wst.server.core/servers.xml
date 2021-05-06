@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="7">
+    <list key="modules" value0="0421_Web_Basic::org.eclipse.jst.jee.server:0421_Web_Basic::jst.web::3.1" value1="0428_JQuery_Test::org.eclipse.jst.jee.server:0428_JQuery_Test::jst.web::3.1" value2="0428_plugin_dataTables::org.eclipse.jst.jee.server:0428_plugin_dataTables::jst.web::3.1" value3="0429_javascript_Ex::org.eclipse.jst.jee.server:0429_javascript_Ex::jst.web::3.1" value4="KakaoMap::org.eclipse.jst.jee.server:KakaoMap::jst.web::3.1" value5="0430_bootstrap_Ex::org.eclipse.jst.jee.server:0430_bootstrap_Ex::jst.web::3.1" value6="member::org.eclipse.jst.jee.server:member::jst.web::3.1"/>
+  </server>
+</servers>

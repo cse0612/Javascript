@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>HTML5 추가된 email 객체</title>
+</head>
+<body>
+	<div align="center">
+		<h2>신상 정보 입력 폼 만들기</h2>	
+		<hr>
+		<form name="myForm">
+			<table border="1">
+				<tr>
+					<th>이  름</th>
+					<td><input type="text" name="name" required></td>
+				</tr>
+				<tr>
+					<th>이메일</th>
+					<td><input type="email" name="email" maxlength="50" required></td>
+				</tr>
+				<tr>
+					<th>휴대폰번호</th>
+					<td><input type="tel" name="phone" placeholder="010-1234-1234" pattern="(010)-[0-9]{4}-[0-9]{4}"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="전송">
+						<input type="reset" value="취소">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>HTML5 Sematic Tag</title>
+<style>
+	header { 
+		width:960px;	height:100px;	background:greenyellow;	margin:0 auto;
+	}
+	header nav {
+		width:500px; height: 40px; float: right;
+		background: #888; margin-top:5px; margin-right: 20px;
+	}
+	figure { 
+		width:960px; height: 300px; 
+		background: #ccc; margin:0 auto;
+	}
+	section { width:960px; margin:0 auto; }
+	section article { 
+		width:319px; height:300px; float:left; background:#555; 
+		margin-right:1px;
+	}
+	aside { 
+		position:absolute; top:100px; right:0px;
+		width:100px; height:400px; background:#aaa;
+	}
+	footer {
+		width:960px; height:80px; background:#333;
+		margin:0 auto;  clear:both; text-align:center;
+	}
+	a, #aside-contents, #copyright { color:white; }
+</style>
+</head>
+<body>
+	<header>
+		<h1>문서의 시작 부분인 Header => 회사 로고나 제목, 메뉴 등을 지정</h1>
+		<nav>nav =>
+			<a href="#">홈</a>
+			<a href="#">쇼핑</a>
+			<a href="#">커뮤니티</a>
+		</nav>
+	</header>
+	
+	<figure>
+		<br><br>
+		<h3>문서의 멀티미디어 요소를 나타내는 영역 Figure</h3>
+	</figure>
+	
+	<section>
+		<h3>메인 콘텐츠 영역 지정 및 문서 내용 구분 => Section </h3>
+		<article> Article1 </article>
+		<article> Article2 </article>
+		<article> Article3 </article>
+	</section>
+	
+	<aside>
+		<h3 id="aside-contents">배너광고 본문과는 다른 서브 컨텐츠 영역 => aside</h3>
+	</aside>
+	
+	<footer>
+		<p id="copyright">footer => Copyright & copy : 2021 All rights reserved</p>
+	</footer>
+	
+</body>
+</html>

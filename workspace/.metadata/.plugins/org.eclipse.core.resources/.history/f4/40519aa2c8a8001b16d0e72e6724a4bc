@@ -1,0 +1,6 @@
+{
+"DATA" : [
+{"lastmodts":"20200106093025","dtlstatenm":"폐업","bplcnm":"명지약국","clgenddt":"","sitearea":"","dcbymd":"20200106","clgstdt":"","trdstategbn":"03","trdstatenm":"폐업","apvcancelymd":"","sitepostno":"120100","opnsfteamcode":"3120000","sitetel":"02-394-3960","sitewhladdr":"서울특별시 서대문구 홍은동 11-458","dtlstategbn":"03","rdnpostno":"03603","pharmtrdar":"약국","updategbn":"U","updatedt":1578418800000,"apvpermymd":"19660423","uptaenm":"","rdnwhladdr":"서울특별시 서대문구 홍은중앙로7길 2 (홍은동)","y":33.45048921971038,"ropnymd":"","mgtno":"PHMD119663120033084000001","asgnymd":"19660423","x":126.56945764814947},
+{"lastmodts":"20171110141240","dtlstatenm":"폐업","bplcnm":"안일약국","clgenddt":"","sitearea":"","dcbymd":"20171110","clgstdt":"","trdstategbn":"03","trdstatenm":"폐업","apvcancelymd":"","sitepostno":"120809","opnsfteamcode":"3120000","sitetel":"02-392-7130","sitewhladdr":"서울특별시 서대문구 대현동 110번지 66호","dtlstategbn":"03","rdnpostno":"03777","pharmtrdar":"약국","updategbn":"I","updatedt":1535727599000,"apvpermymd":"19670216","uptaenm":"","rdnwhladdr":"서울특별시 서대문구 신촌역로 19 (대현동)","y":33.45048921971038,"ropnymd":"","mgtno":"PHMD119673120033084000001","asgnymd":"19670216","x":126.56945764814947}
+]
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQueryUI 예제 => [사례] 도서관리 사이트 적용</title>
+</head>
+<body>
+	<div id="example">
+		<ul>
+			<li><a href="#tab-1">추천 도서</a></li>
+			<li><a href="#tab-2">베스트셀러</a></li>
+			<li><a href="#tab-3">신간 도서</a></li>
+		</ul>
+	</div>
+</body>
+</html>

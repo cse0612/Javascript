@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	img { width:150px; height: 200px; }
+	.divHeight { float:none; }
+</style>
+</head>
+<body>
+	<h2>CGV 현재 상영작/개봉 예정</h2>
+	<div id="rotator1">
+		<div class="divHeight">
+			<img src="images/더스파이.jpg" hspace="20">
+			<br><center><b>더스파이</b></center>
+		</div>
+		<div class="divHeight">
+			<img src="images/비당신.jpg" hspace="20">
+			<br><center><b>비당신</b></center>
+		</div>
+		<div class="divHeight">
+			<img src="images/마크업.jpg" hspace="20">
+			<br><center><b>마크업</b></center>
+		</div>
+		<div class="divHeight">
+			<img src="images/미나리.jpg" hspace="20">
+			<br><center><b>미나리</b></center>
+		</div>
+	</div>
+</body>
+</html>

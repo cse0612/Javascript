@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 지도를 담을 영역 만들기  -->
+<div id="map" style="width:500px;height:400px;"></div>
+<!--  실제 지도를 그리는 Javascript API를 불러오기 -->
+
+</body>
+</html>

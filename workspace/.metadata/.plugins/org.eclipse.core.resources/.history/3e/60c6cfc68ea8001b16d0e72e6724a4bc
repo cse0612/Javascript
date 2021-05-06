@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>tabs jQueryUI 예제 => [사례] 도서관리 사이트 적용</title>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
+<!--  jQuery 파일  -->
+<script src="js/jquery.js"></script>
+
+<!--  jQuery UI 파일  -->
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#example').tabs();
+	})
+</script>
+</head>
+<body>
+	<div id="example">
+		<ul>
+			<li><a href="#tab-1">추천 도서</a></li>
+			<li><a href="#tab-2">베스트셀러</a></li>
+			<li><a href="#tab-3">신간 도서</a></li>
+		</ul>
+	</div>
+	<div id="tab-1">
+		<img src="images/코드로배우는스프링부트웹프로젝트.jpg">
+	</div>
+	<div id="tab-2">
+		<img src="images/코드로배우는스프링웹프로젝트.jpg">
+	</div>
+	<div id="tab-3">
+		<img src="images/토비의스프링.jpg">
+	</div>
+	<div id="tab-3">
+		<img src="images/토비의스프링3.1.jpg">
+	</div>
+</body>
+</html>

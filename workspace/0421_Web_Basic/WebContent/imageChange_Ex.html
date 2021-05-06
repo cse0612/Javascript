@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>기업사이트 동적인 이미지 교체</title>
+<style>
+	#id { width:500px; height:300px; }
+</style>
+
+<script>
+	var imgs = new Array();
+	var i = 0;
+	imgs.push("./images/img1.jpg");
+	imgs.push("./images/img2.jpg");
+	imgs.push("./images/img3.jpg");
+	imgs.push("./images/img4.jpg");
+	imgs.push("./images/img1.jpg");
+	imgs.push("./images/img2.jpg");
+	
+	window.onload = function() {	//콜백함수 => 자동으로 함수 처리
+		setInterval("imageChange()", 1000);	//1초마다 imageChange 함수 실행
+		
+	}
+	
+	function imageChange() {
+		//var currentDate = new Date();
+		//img.src = imgs[parseInt(((currentDate.getSeconds()) % 8) / 2)];
+		var img = document.getElementById("img");
+		img.src = imgs[i%imgs.length];
+		i++;
+		//if(i == imgs.length) i = 0; 
+		console.log(img.src);
+	}
+	
+</script>
+</head>
+<body>
+	<div align="center">
+		<h1>(주) 휴먼소프트 이미지 동적교체</h1>
+		<img id="img">
+	</div>
+</body>
+</html>

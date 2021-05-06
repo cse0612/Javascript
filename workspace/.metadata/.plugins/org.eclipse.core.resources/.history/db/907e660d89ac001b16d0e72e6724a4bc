@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<% request.setCharacterEncoding("EUC-KR"); %>
+
+<jsp:useBean id="mem" class="member.DBBean" scope="page" />
+<jsp:setProperty property="*" name="mem"/>
+<%
+	//"action" 이라는 문자열의 값 => 즉 "insert" action 참조변수에 할당
+	String action = request.getParameter("action");
+
+	if(action.equals("insert")) {
+		if(mem.insertDB()) {	// 반환type : Boolean
+			System.out.println("member 테이블에 데이타 입력 성공!");
+		} else {
+			System.out.println("member 테이블에 데이타 입력 실패!");
+		}
+	}
+	
+%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Member_control 페이지 => MVC 패턴의 C(Controler)부분에 해당</title>
+</head>
+<body>
+
+</body>
+</html>

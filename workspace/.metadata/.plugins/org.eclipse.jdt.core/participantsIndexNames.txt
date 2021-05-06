@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Web_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\664531153.index
+\0428_JQuery_Test\src
+C:\Web_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3303232331.index
+\member\src
+C:\Web_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2298576562.index
+\0421_Web_Basic\src
+C:\Web_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2398203702.index
+\0429_javascript_Ex\src

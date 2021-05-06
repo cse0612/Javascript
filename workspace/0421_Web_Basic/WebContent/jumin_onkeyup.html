@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>주민번호 입력값 체크 예제</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="jumin1" name="jumin1" data-name="주민번호1" size=6 maxlength="6"> -
+		<input type="text" id="jumin2" name="jumin2" data-name="주민번호2" size=7 maxlength="7">
+		<input type="button" name="btn" value="주민번호 체크" onclick="check();"> <p>
+		<input type="text" id="jumin3" name="jumin3" data-name="주민번호결과" size=20 maxlength="20">
+	</form>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function(){
+	 $('#jumin1').on('keyup', function(){
+         if($(this).val().length == 6)
+             $('#jumin2').trigger('focus');
+     });
+});
+
+//주민번호체크
+function check() {
+ 	if(($("#jumin1").val() == "") || ($("#jumin2").val() == "")){
+	    alert("주민등록번호를 입력해주세요");
+	    $("#jumin1").focus();
+	    return false;
+	}
+	if(checkJumin() == false){
+	    return false;
+	}
+}
+
+function checkJumin(){
+    
+    var jumins3 = $("#jumin1").val() + $("#jumin2").val();
+    //주민등록번호 생년월일 전달
+
+    var fmt = RegExp(/^\d{6}[1234]\d{6}$/)  //정규표현식 포멧 설정
+    var buf = new Array(13);
+
+    //주민번호 입력 패턴 검사
+    if (!fmt.test(jumins3)) {
+          alert("주민등록번호 형식에 맞게 입력해주세요");
+          $("#jumin1").focus();
+          return false;
+    }
+
+    //주민번호 유효성 검사
+    for(var i = 0; i < buf.length; i++){
+  		buf[i] = parseInt(jumins3.charAt(i));
+    }
+    var multipliers = [2,3,4,5,6,7,8,9,2,3,4,5];	// 밑에 더해주는 12자리 숫자들 
+    var sum = 0;
+    for(var i = 0; i < 12; i++){
+    	sum += (buf[i] *= multipliers[i]);	// 배열끼리12번 돌면서 
+     }
+	if ((11 - (sum % 11)) % 10 != buf[12]) {
+    	alert("잘못된 주민등록번호 입니다.");
+       	$("#jumin1").focus();
+        return false;
+    } 
+	
+    var birthYear = (jumins3.charAt(6) <= "2") ? "19" : "20";
+    birthYear += $("#jumin1").val().substr(0, 2);
+    var birthMonth = $("#jumin1").val().substr(2, 2);
+    var birthDate = $("#jumin1").val().substr(4, 2);
+    var birth = new Date(birthYear, birthMonth, birthDate);
+    $("#jumin3").val(birthYear+birthMonth+birthDate);
+    
+}
+
+//JQuery 빈값체크
+/*
+$(function(){
+    $("input[type=button]").click(function(){
+        var isRight = true;
+        $("#frm").find("input[type=text]").each(function(index, item){
+            // 아무값없이 띄어쓰기만 있을 때도 빈 값으로 체크되도록 trim() 함수 호출
+            if ($(this).val().trim() == '') {
+                alert($(this).attr("data-name")+" 항목을 입력하세요.");
+                isRight = false;
+                return false;
+            }
+        });
+
+        if (!isRight) {
+            return;
+        }
+
+        $(this).prop("disabled", true);
+        $(this).prop("disabled", false);
+    });
+
+});
+*/
+
+</script>
+	
+</body>
+</html>

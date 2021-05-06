@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>email onChange() 예제</title>
+</head>
+<body>
+	<form name='frm'>
+		<input name="email_id" id="e1" type="text" style="width: 120px"
+			value="<%=e1%>"> &nbsp; @ &nbsp; 
+		<input name="email_domain" type="text" style="width: 120px" value="<%=email_domain%>"> 
+			<select	name="email_server" id="email_server" onchange="input_email();">
+			<option value="">직접입력</option>
+			<option value="naver.com">naver.com</option>
+			<option value="nate.com">nate.com</option>
+			<option value="hanmail.net">hanmail.net</option>
+			<option value="gmail.com">gmail.com</option>
+			<option value="yahoo.com">yahoo.com</option>
+			<option value="yahoo.co.kr">yahoo.co.kr</option>
+			<option value="hotmail.com">hotmail.com</option>
+		</select>
+	</form>
+	<script language="javascript">
+		function input_email() {
+			document.frm.email_domain.value = document.frm.email_server.value;
+		}
+	</script>
+</body>
+</html>

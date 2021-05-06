@@ -1,0 +1,12 @@
+package member;
+
+/**
+ * 
+ * DBBean 클래스는 member 테이블과 관련 있는 클래스이다
+ *
+ */
+public class DBBean {
+	private String mem_id, mem_passwd;
+	
+	
+}

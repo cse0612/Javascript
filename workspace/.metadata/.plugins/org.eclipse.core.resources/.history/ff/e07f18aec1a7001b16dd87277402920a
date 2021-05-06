@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>hide() 함수 예제</title>
+</head>
+<body>
+	<h3>이 부분은 타이틀</h3>
+	<p>이 부분은 단락입니다</p>
+	<p>이 부분은 또다른 단락입니다</p>
+	<button>여기를 클릭하세요</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>애니매이션 효과 주기 => animate()함수 활용</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('button').click(function() {
+			$('div').animate({height:300}, 1000);
+			$('div').animate({width:300}, 1000);
+			$('div').animate({height:100}, 1000);
+			$('div').animate({width:100}, 1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<button>애니메이션 시작하기</button>
+	<br><br>
+	<div style="background: green;width:100px;height: 100px;position: relative;">
+	</div>
+</body>
+</html>

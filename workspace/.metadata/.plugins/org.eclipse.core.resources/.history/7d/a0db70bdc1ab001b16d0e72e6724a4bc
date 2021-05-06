@@ -1,0 +1,12 @@
+/**
+ * ID 중복 체크 검사 함수 구현
+ */
+function idCheck(id) {
+	if(id == "") {
+		alert("아이디를 입력해 주세요!");
+	} else {
+		url = "IdCheck.jsp?mem_id="+id;		//get 방식
+		window.open(url, "아이디 체크 팝업", "width=350, height=150");
+		
+	}
+}
